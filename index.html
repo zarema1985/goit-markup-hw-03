@@ -26,8 +26,8 @@
         >
         <ul class="head-line-height flex-header flex-width">
           <li><a href="/" class="nav-link active">Студия</a></li>
-          <li><a href="./portfolio.html" class="nav-link mar-link">Портфолио</a></li>
-          <li><a href="/" class="nav-link mar-link">Контакты</a></li>
+          <li class="mar-link"><a href="./portfolio.html" class="nav-link">Портфолио</a></li>
+          <li class="mar-link"><a href="/" class="nav-link">Контакты</a></li>
         </ul>
       </nav>
       <ul class="head-line-height-contacts flex-header">
@@ -36,20 +36,22 @@
             >info@devstudio.com</a
           >
         </li>
-        <li>
-          <a href="tel:+38 096 111 11 11" class="nav-link mar-link"
+        <li class="mar-link">
+          <a href="tel:+38 096 111 11 11" class="nav-link"
             >+38 096 111 11 11</a>
         </li>
       </ul>
     </div>
     </header>
     <main>
-      <!-- <div class="flex-main"> -->
       <section class="main-slider">
+       <div class="container">
         <h1>эффективные решения <br>для вашего бизнеса</h1>
         <button type="button" class="main-button">Заказать услугу</button>
+       </div>
       </section>
-      <section class="section container">
+      <section class="section">
+        <div class="container">
         <ul class="flex-list">
           <li class="flex-inlist">
             <h3 class="main-list">внимание к деталям</h3>
@@ -80,8 +82,10 @@
             </p>
           </li>
         </ul>
+      </div>
       </section>
-      <section class="image-section container">
+      <section class="image-section">
+        <div class="container">
         <h2>Чем мы занимаемся</h2>
         <ul class="flex-image">
           <li>
@@ -106,6 +110,7 @@
             />
           </li>
         </ul>
+      </div>
       </section>
       <section class="team-section">
         <div class="container">
@@ -113,22 +118,25 @@
         <ul class="flex-imagaphoto">
           <li class="color-card">
             <img src="images/igor.JPG" alt="фотография Игоря" width="270" />
+            <div class="pad-team">
             <h3 class="name">Игорь Демьяненко</h3>
             <p class="post">Product Designer</p>
+            </div>
           </li>
           <li class=color-card>
             <img src="images/olga.JPG" alt="фотография Ольги" width="270" />
+            <div class="pad-team">
             <h3 class="name">Ольга Репина</h3>
             <p class="post">Frontend Developer</p>
+          </div>
           </li>
           <li class=color-card>
-            <img
-              src="images/nicolay.JPG"
-              alt="фотография Николая"
-              width="270"
+            <img src="images/nicolay.JPG" alt="фотография Николая" width="270"
             />
+            <div class="pad-team">
             <h3 class="name">Николай Тарасов</h3>
             <p class="post">Marketing</p>
+            </div>
           </li>
           <li class=color-card>
             <img
@@ -136,8 +144,10 @@
               alt="фотография Михаила"
               width="270"
             />
+            <div class="pad-team">
             <h3 class="name">Михаил Ермаков</h3>
             <p class="post">UI Designer</p>
+            </div>
           </li>
         </ul>
       </div>

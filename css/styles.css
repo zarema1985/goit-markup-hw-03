@@ -59,10 +59,11 @@ ul {
 img {
     max-width: 100%;
     height: auto;
+    display: block;
 }
 
 .page-header {
-    border-bottom: 1px solid;
+    border-bottom: 1px solid #ECECEC;
     background: var(--accent-text-color);
     /* display: inline; */
 } 
@@ -127,6 +128,8 @@ h1 {
     text-transform: uppercase;
     color: var(--primary-text-color);
     height: 16px;
+    margin: 0;
+    padding: 0;
 }
 
 .list {
@@ -135,11 +138,13 @@ h1 {
     letter-spacing: 0.03em;
     color: var(--title-text-color);
     height: 75px;
+    margin: 10px 0 0 0;
+    padding: 0;
 }
 
 h2 {
     font-size: 36px;
-    line-height: 1,17;
+    line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
@@ -160,6 +165,7 @@ h2 {
     line-height: 1,19;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
+    margin: 0;
 }
 
 .post {
@@ -168,6 +174,7 @@ h2 {
     line-height: 1,19;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
+    margin: 10px 0 0 0;
 }
 
 .address {
@@ -195,6 +202,8 @@ h2 {
     color: var(--primary-text-color);
     background: var(--backgr-color);
     padding: 6px 22px;
+    border-radius: 4px;
+    border: 0;
 }
 
 .buttons-portfolio li:not(:last-child) {
@@ -259,9 +268,9 @@ h2 {
 
 .flex-list {
     display: flex;
-    align-items: flex-start;
+    /* align-items: flex-start; */
     box-sizing: border-box;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .flex-inlist {
@@ -270,15 +279,22 @@ h2 {
 
 .flex-image {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    /* align-items: center;
+    justify-content: space-between; */
 }
+
+.flex-image li:not(:last-child) {
+    margin-right: 30px;
+}           
 
 .flex-imagaphoto {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    /* align-items: center;
+    justify-content: space-between; */
 }
+.flex-imagaphoto li:not(:last-child) {
+    margin-right: 30px;
+}           
 
 .flex-button {
     display: flex;
@@ -292,10 +308,12 @@ h2 {
 .wrap-image {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; 
-    
+    /* justify-content: space-between;  */
 }
 
+.mar-image {
+    margin: 0 30px 0 0;
+}
 .flex-width {
     /* width: 294px; */
     margin-left: 93px;
@@ -323,4 +341,11 @@ section {
     margin-left: 50px;
 }
 
+.flex-list li:not(:last-child) {
+    margin-right: 30px;
+}
 
+.pad-team {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
